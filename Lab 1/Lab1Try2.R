@@ -70,3 +70,10 @@ qqline(x)
 
 boxplot(data$EPI,data$DALY) 
 qqplot(data$EPI,data$DALY)
+
+
+#Exercise 2
+EPILand<-data$EPI[!data$Landlock]
+Eland <- EPILand[!is.na(EPILand)]
+hist(ELand)
+hist(ELand, seq(30., 95., 1.0), prob=TRUE)
